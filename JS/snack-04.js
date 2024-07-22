@@ -9,13 +9,13 @@ la lista completa dei nomi degli invitati */
 
 const invitati = ['Gianni', 'Marco', 'Laura', 'Sara', 'Nicola', 'Gabriel', 'Tommaso', 'Carmela', 'Amalia', 'Lucia', 'Mattia', 'Sandra', 'Federico']  //strings array
 
-console.log(invitati)
+console.log(invitati) //controllo funzione
 
 //chiedo all'utente di inserire il tuo nome
 
 const userName = prompt('Ho bisogno di sapere come ti chiami!')
 
-console.log(userName)
+console.log(userName) //controllo funzione
 
 /* inserisco la condizione per verifcare se 
 l'utente risulta nella lista degli invitati */
@@ -23,7 +23,7 @@ l'utente risulta nella lista degli invitati */
 
 if (invitati.includes(userName)) {
 
-    console.log('Congratulazioni')
+    console.log('Congratulazioni') //controllo funzione
 
     //stampo su html la conferma di presenza in lista
     invitoElement.innerHTML = "Congratulazioni, sei in Lista per l'Evento."
@@ -32,7 +32,7 @@ if (invitati.includes(userName)) {
 
 else {
 
-    console.log('Mi dispiace!')
+    console.log('Mi dispiace!') //controllo funzione
 
     //stampo su html il messaggio di NON presenza in lista
     invitoElement.innerHTML = "Mi dispiace! ma purtroppo il tuo nome non è in lista."
