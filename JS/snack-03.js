@@ -2,32 +2,41 @@ console.log('Snack-03 - Iniziamo')
 
 //acquisisco l'elemento HTML che mi servirà per stampre successivamente
 
-const listElement = document.getElementById('numbers')
+let listElement = document.getElementById('numbers')
 
-/* chiedo per 10 volte all'utente di 
-inserire dei numeri casuali e li "salvo"
-in delle variabili definite */
+//definisco la variabile somma che mi servirà alla fine
 
-/* apro il ciclo che si chiuderà al termine della
-decima interazione con richiesta dati */
+let somma = 0
 
-for (let i = 0; i < 10; i++) {
+/* chiedo all'utente tramite prompt di inserire
+10 numeri casuali a sua scelta */
+
+//apro il ciclo che avrà 10 interazioni
+
+for (i = 0; i < 10; i++) {
+
+    //acquisisco l'input dell'utente
+    let inputNumber = parseInt(prompt('Inserisci un numero casuale'))
+
+    //faccio la somma deo numeri via via inseriti
+    somma = somma + inputNumber
 
 
-    /*inserisco la condizione per far continuare il loop
-    e far chiedere nuovamente all'utente un numero da inserire */
+    //stampo la somma finale sulla pagina html
+    listElement.innerHTML = somma
 
-    if (i < 10) {
-
-        //definisco la variabile del numero inserito dall'utente
-        inputNumber = parseInt(prompt('Inserisci un numero casuale'))
-
-
-        /* stampo il numero inserito con i tag html in modo che
-        ella pagina mi vengano poi successivamente visualizzati
-        i numeri in un formato di elenco/lista */
-        listElement.innerHTML = '<li> ' + inputNumber + '</li>'
-    }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
