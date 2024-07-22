@@ -1,5 +1,9 @@
 console.log('Party: Il Grande Gatsby')
 
+//recupero l'elemento HTML che mi servirà successivamente
+
+let invitoElement = document.getElementById('invitato')
+
 /* definisco l'Array nel quale inserirò
 la lista completa dei nomi degli invitati */
 
