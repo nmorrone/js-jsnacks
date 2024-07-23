@@ -13,7 +13,7 @@ let somma = 0
 
 //apro il ciclo che avrà 10 interazioni
 
-for (i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
 
     //acquisisco l'input dell'utente
     let inputNumber = parseInt(prompt('Inserisci un numero casuale'))

@@ -12,7 +12,7 @@ const numbersElement = document.getElementById('numbers')
 
 //apro il ciclo con 6 interazioni
 
-for (i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i++) {
 
     //chiedo all'utente di inserire un numero casuale
     let inputNumber = parseInt(prompt('Inserisci un numero'))

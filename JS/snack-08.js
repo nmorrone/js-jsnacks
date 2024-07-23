@@ -9,24 +9,34 @@ const numberElement = document.getElementById('result')
 
 //dichiaro la variabile con il numero generato casualmente
 /*arrotondo e moltiplico per 10 così so di poter ottenere
-numeri generati casualmente da 1 a 10 */
-const botNumber = parseInt(Math.random() * 10)
+let  generati casualmente da 1 a 10 */
+let botNumber = parseInt(Math.random() * 10)
 
-//chiedo all'utente di inserire un numero
-let userNumber = parseInt(prompt('Inserisci un numero da 1 a 10')
+//verifico funzionamento
+console.log(botNumber)
+
+//apro il ciclo WHILE
+
+//inserisco la condizione che deve essere vera per interrompere il ciclo
+while (true) {
 
 
-if (userNumber == botNumber) {
+    //chiedo all'utente di inserire un numero
+    let userNumber = parseInt(prompt('Inserisci un numero da 1 a 10'))
 
-    //verifico funzionamento
-    console.log('Congratulazioni')
+    //Verifico funzionamento
+    console.log(userNumber)
 
-    //stampo ella pagina HTML
-    numberElement.innerHTML = 'Congratulazioni, hai indovinato il numero generato!'
+
+    //condizione per interrompere il ciclo
+    //i numeri devono essere uguali
+    if (botNumber === userNumber) break
+
+
 }
 
-else {
 
-    //richiedo nuovamente l'inserimento
-    let userNumber = parseInt(prompt('Inserisci nuovamente un numero ds 1 a 10'))
-}
+//stampo il risultato nella pagina HTML
+numberElement.innerHTML = 'Congratulazioni, hai indovinato il numero generato dal BOT'
+
+

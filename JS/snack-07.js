@@ -21,7 +21,7 @@ quelle che mi serviranno per il programma */
 
 //2*500=100, numero da raggiungere
 
-for (i = 0; i < 500; i++) {
+for (let i = 0; i < 500; i++) {
 
     //inserisco la condizione di aumento del valore della variabile
     twoTimeTable = twoTimeTable + 2
