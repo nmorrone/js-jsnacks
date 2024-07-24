@@ -15,23 +15,15 @@ i numeri che ò'utente inserirà */
 
 let numbers = []
 
+let inputNumber = parseInt(prompt('Inserisci un numero'))
+
+numbers.push(inputNumber)
+
 //creo il ciclo while
-while (true) {
+while (!numbers.includes(inputNumber)) {
 
     //chiedo all'utente di inserire un numero
     let inputNumber = parseInt(prompt('Inserisci un numero'))
 
-
-    //verifico funzionamento
-    console.log(inputNumber)
-
-    //pusho il numero nell'Array
-    numbers.push(inputNumber)
-
-    //verifico funzionamento
-    console.log(numbers)
-
-    //inserisco la condizione per interrompere il loop
-    if () break
 
 }
