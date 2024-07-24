@@ -16,11 +16,11 @@ i numeri che ò'utente inserirà */
 let numbers = []
 
 //creo il ciclo while
-
 while (true) {
 
     //chiedo all'utente di inserire un numero
     let inputNumber = parseInt(prompt('Inserisci un numero'))
+
 
     //verifico funzionamento
     console.log(inputNumber)
